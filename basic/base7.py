@@ -67,3 +67,35 @@ print(msg_r)
 
 msg = 'helLo wOrld'
 print(msg.capitalize())
+
+# 文字列の一部取り出し、format, islower, isupper
+
+msg = 'hello, my name is taro'
+print(msg[1:10])
+print(msg[1:10:2])
+print(msg[1:10:3])
+print('hello {}'.format('taro'))
+name = 'taro'
+print(f'hello {name}')
+print(f'{name=}')
+
+msg = 'apple'
+print(msg.islower())
+
+msg = 'aPple'
+print(msg.islower())
+
+print(msg.isupper())
+msg = 'APPLE'
+print(msg.isupper())
+
+# find, index, rfind, rindex indexはエラーが発生 findは-1を返す
+
+msg = 'ABCDEABC'
+print(msg.find('ABC'))
+print(msg.rfind('ABC'))
+print(msg.index('ABC'))
+print(msg.rindex('ABC'))
+
+print(msg.find('ggg'))
+print(msg.index('ggg'))
